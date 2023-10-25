@@ -71,7 +71,7 @@ export const Accounts = () => {
                <DotsIcon />
             </Flex>
             <Flex direction={'row'} css={{gap: '$6'}} wrap={'wrap'}>
-               <AddUser />
+               {/* <AddUser /> */}
                <Button auto iconRight={<ExportIcon />}>
                   Exportar em CSV
                </Button>
