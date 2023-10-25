@@ -11,13 +11,30 @@ interface Props {
    columnKey: string | React.Key;
 }
 
+type Status = "success" | "warning" | "error" | "default" | "primary" | "secondary" | "gradient" | undefined;
+
+function getColor(str: string): Status {
+   if (str === 'ligado') {
+      return 'success';
+   }
+   if (str === 'desligado') {
+      return 'warning';
+   }
+
+   if (str === 'reparo') {
+      return 'error';
+   }
+
+   return undefined;
+}
+
 export const RenderCell = ({user, columnKey}: Props) => {
    // @ts-ignore
    const cellValue = user[columnKey];
    switch (columnKey) {
       case 'name':
          return (
-            <User name={cellValue} css={{p: 0}} size='xs' color={user.avatar}>
+            <User name={cellValue} css={{p: 0}} size='xs' color={getColor(user.status)}>
                {user.email}
             </User>
          );
