@@ -30,27 +30,20 @@ export const NotificationsDropdown = () => {
                },
             }}
          >
-            <Dropdown.Section title="Notificacions">
+            <Dropdown.Section title="Notificações">
                <Dropdown.Item
                   key="1"
                   showFullDescription
                   description="Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
                >
-                  📣 Edit your information
+                  📣 Receba atualizações
                </Dropdown.Item>
                <Dropdown.Item
                   key="2"
                   showFullDescription
                   description="Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
                >
-                  🚀 Say goodbye to paper receipts!
-               </Dropdown.Item>
-               <Dropdown.Item
-                  key="3"
-                  showFullDescription
-                  description="Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
-               >
-                  📣 Edit your information
+                  🚀 Gere relatórios automaticamente!
                </Dropdown.Item>
             </Dropdown.Section>
          </Dropdown.Menu>

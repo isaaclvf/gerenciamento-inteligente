@@ -19,10 +19,10 @@ export const CardBalance2 = () => {
                <Community color={'$accents9'} />
                <Flex direction={'column'}>
                   <Text span css={{color: ''}}>
-                     Healt Insurance
+                     Média diária
                   </Text>
                   <Text span size={'$xs'}>
-                     +2400 People
+                     3000 Pessoas
                   </Text>
                </Flex>
             </Flex>

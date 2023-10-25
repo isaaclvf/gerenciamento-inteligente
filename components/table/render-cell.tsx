@@ -17,7 +17,7 @@ export const RenderCell = ({user, columnKey}: Props) => {
    switch (columnKey) {
       case 'name':
          return (
-            <User squared src={user.avatar} name={cellValue} css={{p: 0}}>
+            <User name={cellValue} css={{p: 0}} size='xs' color={user.avatar}>
                {user.email}
             </User>
          );
@@ -54,18 +54,18 @@ export const RenderCell = ({user, columnKey}: Props) => {
                css={{'gap': '$8', '@md': {gap: 0}}}
             >
                <Col css={{d: 'flex'}}>
-                  <Tooltip content="Details">
+                  <Tooltip content="Detalhes">
                      <IconButton
-                        onClick={() => console.log('View user', user.id)}
+                        onClick={() => console.log('Ver mais informações', user.id)}
                      >
                         <EyeIcon size={20} fill="#979797" />
                      </IconButton>
                   </Tooltip>
                </Col>
                <Col css={{d: 'flex'}}>
-                  <Tooltip content="Edit user">
+                  <Tooltip content="Editar informações">
                      <IconButton
-                        onClick={() => console.log('Edit user', user.id)}
+                        onClick={() => console.log('Editar informações', user.id)}
                      >
                         <EditIcon size={20} fill="#979797" />
                      </IconButton>
@@ -78,7 +78,8 @@ export const RenderCell = ({user, columnKey}: Props) => {
                      onClick={() => console.log('Delete user', user.id)}
                   >
                      <IconButton>
-                        <DeleteIcon size={20} fill="#FF0080" />
+                        {/* <DeleteIcon size={20} fill="#FF0080" /> */}
+
                      </IconButton>
                   </Tooltip>
                </Col>

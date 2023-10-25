@@ -6,24 +6,45 @@ import {BottomIcon} from '../icons/sidebar/bottom-icon';
 import {Box} from '../styles/box';
 import {Flex} from '../styles/flex';
 
-interface Company {
+interface Category {
    name: string;
-   location: string;
-   logo: React.ReactNode;
+   description: string;
+   icon: React.ReactNode;
 }
 
-export const CompaniesDropdown = () => {
-   const [company, setCompany] = useState<Company>({
-      name: 'Acme Co.',
-      location: 'Palo Alto, CA',
-      logo: <AcmeIcon />,
-   });
+const climatization = {
+   name: 'Climatização',
+   description: 'Ares-Condicionados',
+   icon: <AcmeIcon />,
+};
+
+const entrance = {
+   name: 'Entradas',
+   description: 'Portas',
+   icon: <AcmeIcon />,
+};
+
+const lights = {
+   name: 'Iluminação',
+   description: 'Lâmpadas',
+   icon: <AcmeIcon />,
+};
+
+const irrigation = {
+   name: 'Irrigação',
+   description: 'Irrigadores',
+   icon: <AcmeIcon />,
+};
+
+export const CategoriesDropdown = () => {
+   const [company, setCompany] = useState<Category>(climatization);
+
    return (
       <Dropdown placement="bottom-right" borderWeight={'extrabold'}>
          <Dropdown.Trigger css={{cursor: 'pointer'}}>
             <Box>
                <Flex align={'center'} css={{gap: '$7'}}>
-                  {company.logo}
+                  {company.icon}
                   <Box>
                      <Text
                         h3
@@ -44,7 +65,7 @@ export const CompaniesDropdown = () => {
                         size={'$xs'}
                         css={{color: '$accents8'}}
                      >
-                        {company.location}
+                        {company.description}
                      </Text>
                   </Box>
                   <BottomIcon />
@@ -54,32 +75,16 @@ export const CompaniesDropdown = () => {
          <Dropdown.Menu
             onAction={(e) => {
                if (e === '1') {
-                  setCompany({
-                     name: 'Facebook',
-                     location: 'San Fransico, CA',
-                     logo: <AcmeIcon />,
-                  });
+                  setCompany(lights);
                }
                if (e === '2') {
-                  setCompany({
-                     name: 'Instagram',
-                     location: 'Austin, Tx',
-                     logo: <AcmeLogo />,
-                  });
+                  setCompany(entrance);
                }
                if (e === '3') {
-                  setCompany({
-                     name: 'Twitter',
-                     location: 'Brooklyn, NY',
-                     logo: <AcmeIcon />,
-                  });
+                  setCompany(irrigation);
                }
                if (e === '4') {
-                  setCompany({
-                     name: 'Acme Co.',
-                     location: 'Palo Alto, CA',
-                     logo: <AcmeIcon />,
-                  });
+                  setCompany(climatization);
                }
             }}
             aria-label="Avatar Actions"
@@ -105,30 +110,30 @@ export const CompaniesDropdown = () => {
                <Dropdown.Item
                   key="1"
                   icon={<AcmeIcon />}
-                  description="San Fransico, CA"
+                  description={lights.description}
                >
-                  Facebook
+                  {lights.name}
                </Dropdown.Item>
                <Dropdown.Item
                   key="2"
                   icon={<AcmeLogo />}
-                  description="Austin, Tx"
+                  description={entrance.description}
                >
-                  Instagram
+                  {entrance.name}
                </Dropdown.Item>
                <Dropdown.Item
                   key="3"
                   icon={<AcmeIcon />}
-                  description="Brooklyn, NY"
+                  description={irrigation.description}
                >
-                  Twitter
+                  {irrigation.name}
                </Dropdown.Item>
                <Dropdown.Item
                   key="4"
                   icon={<AcmeIcon />}
-                  description="Palo Alto, CA"
+                  description={climatization.description}
                >
-                  Acme Co.
+                  {climatization.name}
                </Dropdown.Item>
             </Dropdown.Section>
          </Dropdown.Menu>

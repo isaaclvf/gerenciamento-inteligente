@@ -38,15 +38,15 @@ export const Accounts = () => {
 
             <Crumb>
                <UsersIcon />
-               <CrumbLink href="#">Users</CrumbLink>
+               <CrumbLink href="#">Salas</CrumbLink>
                <Text>/</Text>
             </Crumb>
             <Crumb>
-               <CrumbLink href="#">List</CrumbLink>
+               <CrumbLink href="#">Lista</CrumbLink>
             </Crumb>
          </Breadcrumbs>
 
-         <Text h3>All Accounts</Text>
+         <Text h3>Todas as salas</Text>
          <Flex
             css={{gap: '$8'}}
             align={'center'}
@@ -63,7 +63,7 @@ export const Accounts = () => {
             >
                <Input
                   css={{width: '100%', maxW: '410px'}}
-                  placeholder="Search users"
+                  placeholder="Pesquisar sala"
                />
                <SettingsIcon />
                <TrashIcon />
@@ -73,7 +73,7 @@ export const Accounts = () => {
             <Flex direction={'row'} css={{gap: '$6'}} wrap={'wrap'}>
                <AddUser />
                <Button auto iconRight={<ExportIcon />}>
-                  Export to CSV
+                  Exportar em CSV
                </Button>
             </Flex>
          </Flex>

@@ -12,7 +12,7 @@ export const UserDropdown = () => {
                   as="button"
                   color="secondary"
                   size="md"
-                  src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                  src="https://i.pravatar.cc/150?img=68"
                />
             </Dropdown.Trigger>
          </Navbar.Item>
@@ -22,29 +22,28 @@ export const UserDropdown = () => {
          >
             <Dropdown.Item key="profile" css={{height: '$18'}}>
                <Text b color="inherit" css={{d: 'flex'}}>
-                  Signed in as
+                  Logado como
                </Text>
                <Text b color="inherit" css={{d: 'flex'}}>
-                  zoey@example.com
+                  usuario@exemplo.com
                </Text>
             </Dropdown.Item>
             <Dropdown.Item key="settings" withDivider>
-               My Settings
+               Configurações da conta
             </Dropdown.Item>
-            <Dropdown.Item key="team_settings">Team Settings</Dropdown.Item>
             <Dropdown.Item key="analytics" withDivider>
-               Analytics
+               Estatísticas
             </Dropdown.Item>
-            <Dropdown.Item key="system">System</Dropdown.Item>
-            <Dropdown.Item key="configurations">Configurations</Dropdown.Item>
+            <Dropdown.Item key="system">Sistema</Dropdown.Item>
+            <Dropdown.Item key="configurations">Configurações</Dropdown.Item>
             <Dropdown.Item key="help_and_feedback" withDivider>
-               Help & Feedback
+               Ajuda & Feedback
             </Dropdown.Item>
             <Dropdown.Item key="logout" withDivider color="error">
-               Log Out
+               Sair
             </Dropdown.Item>
             <Dropdown.Item key="switch" withDivider>
-               <DarkModeSwitch />
+               <DarkModeSwitch /> 
             </Dropdown.Item>
          </Dropdown.Menu>
       </Dropdown>

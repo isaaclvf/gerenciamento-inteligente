@@ -19,10 +19,10 @@ export const CardBalance3 = () => {
                <Community />
                <Flex direction={'column'}>
                   <Text span css={{color: 'white'}}>
-                     Balance Insurance
+                     Hoje
                   </Text>
                   <Text span css={{color: 'white'}} size={'$xs'}>
-                     1311 Cars
+                     300 kw
                   </Text>
                </Flex>
             </Flex>

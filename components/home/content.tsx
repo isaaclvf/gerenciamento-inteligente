@@ -55,7 +55,7 @@ export const Content = () => (
                      },
                   }}
                >
-                  Available Balance
+                  Visão geral
                </Text>
                <Flex
                   css={{
@@ -85,7 +85,7 @@ export const Content = () => (
                      },
                   }}
                >
-                  Statistics
+                  Estatísticas
                </Text>
                <Box
                   css={{
@@ -103,7 +103,7 @@ export const Content = () => (
          </Flex>
 
          {/* Left Section */}
-         <Box
+         {/* <Box
             css={{
                'px': '$12',
                'mt': '$8',
@@ -143,11 +143,11 @@ export const Content = () => (
                <CardAgents />
                <CardTransactions />
             </Flex>
-         </Box>
+         </Box> */}
       </Flex>
 
       {/* Table Latest Users */}
-      <Flex
+      {/* <Flex
          direction={'column'}
          justify={'center'}
          css={{
@@ -186,6 +186,6 @@ export const Content = () => (
             </NextLink>
          </Flex>
          <TableWrapper />
-      </Flex>
+      </Flex> */}
    </Box>
 );

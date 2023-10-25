@@ -1,28 +1,6 @@
-# NextJS and NextUI Dashboard Sample
+# Dashboard de gerenciamento predial inteligente
 
-You can deploy here directly to vercel [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/chris-trapstar/nextui-dashboard)
-
-This is a sample for NextJS and NextUI. 
-
-[NextJS](https://nextjs.org/) 
-[NextUI](https://nextui.org/)
-
-You can see the demo here: https://nextui-dashboard.vercel.app/
-
-### Dark Mode
-![Dashboard Dark Mode](./public/dark.png)
-
-### Light Mode
-![Dashboard Light Mode](./public/light.png)
-
-
-
-- Dark Mode Support
-- Full Responsive
-- Home Page with Charts
-- Accounts Page
-- More pages coming soon...
-
+Estrutura dos arquivos
 ```
 ├── components
 │   ├── accounts            # Accounts components
@@ -40,20 +18,19 @@ You can see the demo here: https://nextui-dashboard.vercel.app/
 │   ├──  _app.tsx           # Entry point for the app
 │   ├──  index.tsx          # Home page
 │   ├── accounts.tsx        # Accounts Page
-│   ├── more...             # Soon
 └──
 
 ```
-## For Run
+## Para executar
 
-Install dependencies
+Instale dependências
 
     
 ```bash
 npm install
 ```
 
-Start the server
+Inicie o servidor
 
     
         
@@ -61,4 +38,4 @@ Start the server
 npm run dev
 ```
 
-Now you can visit https://localhost:3000 in your browser.
+Agora você pode visitar https://localhost:3000 no seu navegador.
