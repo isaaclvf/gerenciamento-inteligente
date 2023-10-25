@@ -1,6 +1,6 @@
 # Dashboard de gerenciamento predial inteligente
 
-(Projeto online)[https://gerenciamento-inteligente.vercel.app/]
+Ver projeto online [aqui](https://gerenciamento-inteligente.vercel.app/)
 
 Estrutura dos arquivos
 ```
