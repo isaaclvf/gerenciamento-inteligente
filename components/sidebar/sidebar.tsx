@@ -48,32 +48,32 @@ export const SidebarWrapper = () => {
               title="Home"
               icon={<HomeIcon />}
               isActive={router.pathname === "/"}
-              href="/"
+              href="/home"
             />
             <SidebarMenu title="Blocos">
               <SidebarItem
-                isActive={router.pathname === "/accounts"}
+                isActive={router.pathname === "/control-panel"}
                 title="Bloco A"
                 icon={<AccountsIcon />}
-                href="accounts"
+                href="control-panel"
               />
               <SidebarItem
                 isActive={router.pathname === "/bloco/b"}
                 title="Bloco B"
                 icon={<AccountsIcon />}
-                href="accounts"
+                href="control-panel"
               />
               <SidebarItem
                 isActive={router.pathname === "/bloco/c"}
                 title="Bloco C"
                 icon={<AccountsIcon />}
-                href="accounts"
+                href="control-panel"
               />
               <SidebarItem
                 isActive={router.pathname === "/bloco/d"}
                 title="Bloco D"
                 icon={<AccountsIcon />}
-                href="accounts"
+                href="control-panel"
               />
               {/* <SidebarItem
                 isActive={router.pathname === "/payments"}

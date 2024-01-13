@@ -1,28 +1,5 @@
 # Dashboard de gerenciamento predial inteligente
 
-Ver projeto online [aqui](https://gerenciamento-inteligente.vercel.app/)
-
-Estrutura dos arquivos
-```
-├── components
-│   ├── accounts            # Accounts components
-│   ├── charts              # Charts components
-│   ├── breadcrumb          # component
-|   ├── home                # Home components
-|   ├── layout              # Layout components
-|   ├── navbar              # Navbar components
-|   ├── sidebar             # Sidebar components
-|   ├── table               # Table components
-|   ├── styles              # Some reusable components
-|   ├── icons               # Icons
-|   ├── hooks               #  Hooks
-├── pages                   # Documentation files 
-│   ├──  _app.tsx           # Entry point for the app
-│   ├──  index.tsx          # Home page
-│   ├── accounts.tsx        # Accounts Page
-└──
-
-```
 ## Para executar
 
 Instale dependências
@@ -32,9 +9,14 @@ Instale dependências
 npm install
 ```
 
+Configure as variáveis de ambiente
+
+```
+ENDPOINT=...
+```
+
 Inicie o servidor
 
-    
         
 ```bash
 npm run dev

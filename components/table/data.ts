@@ -5,16 +5,15 @@ export const columns = [
    {name: 'AÇÕES', uid: 'actions'},
 ];
 
-export const users = [
+export const equipments = [
    {
       id: 1,
       name: 'A01',
       role: 'LG',
       team: 'Dual Inverter',
       status: 'ligado',
-      age: '29',
       avatar: 'success',
-      email: '2 Aparelhos',
+      count: '2 Aparelhos',
    },
    {
       id: 2,
@@ -22,9 +21,8 @@ export const users = [
       role: 'Samsung',
       team: 'Split',
       status: 'desligado',
-      age: '25',
       avatar: 'warning',
-      email: '1 Aparelho',
+      count: '1 Aparelho',
    },
    {
       id: 3,
@@ -32,9 +30,8 @@ export const users = [
       role: 'Elgin',
       team: 'Split',
       status: 'ligado',
-      age: '22',
       avatar: 'success',
-      email: '2 Aparelhos',
+      count: '2 Aparelhos',
    },
    {
       id: 4,
@@ -42,9 +39,8 @@ export const users = [
       role: 'Consul',
       team: 'Inverter',
       status: 'reparo',
-      age: '28',
       avatar: 'error',
-      email: 'Aparelhos retirados para manutenção',
+      count: 'Aparelhos retirados para manutenção',
    },
    {
       id: 5,
@@ -52,9 +48,8 @@ export const users = [
       role: 'Komeco',
       team: 'Split',
       status: 'ligado',
-      age: '24',
       avatar: 'success',
-      email: '3 Aparelhos',
+      count: '3 Aparelhos',
    },
    {
       id: 6,
@@ -62,9 +57,8 @@ export const users = [
       role: 'LG',
       team: 'Dual Inverter',
       status: 'ligado',
-      age: '29',
       avatar: 'success',
-      email: '2 Aparelhos',
+      count: '2 Aparelhos',
    },
    {
       id: 7,
@@ -72,9 +66,8 @@ export const users = [
       role: 'Komeco',
       team: 'Split',
       status: 'ligado',
-      age: '24',
       avatar: 'success',
-      email: '3 Aparelhos',
+      count: '3 Aparelhos',
    },
    {
       id: 8,
@@ -82,9 +75,8 @@ export const users = [
       role: 'Elgin',
       team: 'Split',
       status: 'ligado',
-      age: '22',
       avatar: 'success',
-      email: '2 Aparelhos',
+      count: '2 Aparelhos',
    },
    {
       id: 9,
@@ -92,9 +84,8 @@ export const users = [
       role: 'Samsung',
       team: 'Split',
       status: 'desligado',
-      age: '25',
       avatar: 'warning',
-      email: '1 Aparelho',
+      count: '1 Aparelho',
    },
 
    {
@@ -103,9 +94,8 @@ export const users = [
       role: 'Consul',
       team: 'Inverter',
       status: 'reparo',
-      age: '28',
       avatar: 'error',
-      email: 'Aparelhos retirados para manutenção',
+      count: 'Aparelhos retirados para manutenção',
    },
    {
       id: 11,
@@ -113,9 +103,8 @@ export const users = [
       role: 'LG',
       team: 'Dual Inverter',
       status: 'ligado',
-      age: '29',
       avatar: 'success',
-      email: '2 Aparelhos',
+      count: '2 Aparelhos',
    },
    {
       id: 12,
@@ -123,9 +112,8 @@ export const users = [
       role: 'Komeco',
       team: 'Split',
       status: 'ligado',
-      age: '24',
       avatar: 'success',
-      email: '3 Aparelhos',
+      count: '3 Aparelhos',
    },
    {
       id: 13,
@@ -133,9 +121,8 @@ export const users = [
       role: 'Elgin',
       team: 'Split',
       status: 'ligado',
-      age: '22',
       avatar: 'success',
-      email: '2 Aparelhos',
+      count: '2 Aparelhos',
    },
    {
       id: 14,
@@ -143,9 +130,8 @@ export const users = [
       role: 'Samsung',
       team: 'Split',
       status: 'desligado',
-      age: '25',
       avatar: 'warning',
-      email: '1 Aparelho',
+      count: '1 Aparelho',
    },
    {
       id: 15,
@@ -153,9 +139,8 @@ export const users = [
       role: 'LG',
       team: 'Dual Inverter',
       status: 'ligado',
-      age: '29',
       avatar: 'success',
-      email: '2 Aparelhos',
+      count: '2 Aparelhos',
    },
    {
       id: 16,
@@ -163,8 +148,7 @@ export const users = [
       role: 'Komeco',
       team: 'Split',
       status: 'ligado',
-      age: '24',
       avatar: 'success',
-      email: '3 Aparelhos',
+      count: '3 Aparelhos',
    },
 ];

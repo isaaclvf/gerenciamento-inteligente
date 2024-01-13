@@ -1,8 +1,7 @@
-import type {NextPage} from 'next';
-import {Content} from '../components/home/content';
+import LoginForm from "../components/login/login-form";
 
-const Home: NextPage = () => {
-   return <Content />;
-};
+const Login = () => {
+    return <LoginForm/>
+}
 
-export default Home;
+export default Login;
