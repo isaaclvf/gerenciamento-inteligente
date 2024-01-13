@@ -9,10 +9,10 @@ Instale dependências
 npm install
 ```
 
-Configure as variáveis de ambiente
+Crie um arquivo `.env` na raíz do projeto e configure as variáveis de ambiente
 
 ```
-ENDPOINT=...
+ENDPOINT=
 ```
 
 Inicie o servidor
