@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       localStorage.removeItem("token");
       router.push("/");
     }
-  }, []);
+  }, [router]);
 
   return (
     <Layout>

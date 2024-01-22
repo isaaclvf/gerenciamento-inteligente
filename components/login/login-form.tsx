@@ -26,14 +26,14 @@ const LoginForm = () => {
     if (token) {
       router.push("/control-panel");
     }
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     if (token) {
       localStorage.setItem("token", token);
       router.push("/control-panel");
     }
-  }, [token]);
+  }, [token, router]);
 
   const handleUsernameChange = (e: SyntheticEvent) => {
     const element = e.target as HTMLInputElement;
@@ -67,7 +67,7 @@ const LoginForm = () => {
     }
 
     const content = await response?.json();
-    
+
     if (!content.token) {
       setStatus("error");
       return;

@@ -4,7 +4,7 @@ import { Layout } from "../../components/layout/layout";
 import { useRouter } from "next/router";
 import { isTokenExpired } from "../../utils/auth";
 
-const controlPanel = () => {
+const ControlPanelPage = () => {
   const router = useRouter();
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const controlPanel = () => {
       localStorage.removeItem("token");
       router.push("/");
     }
-  }, []);
+  }, [router]);
 
   return (
     <Layout>
@@ -28,4 +28,4 @@ const controlPanel = () => {
   );
 };
 
-export default controlPanel;
+export default ControlPanelPage;
